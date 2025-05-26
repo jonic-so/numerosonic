@@ -16,7 +16,7 @@ function textotela(tag, texto){
 
    let campo = document.querySelector(tag);
    campo.innerHTML = texto;
-   responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.5});
+   responsiveVoice.speak(texto, 'Portuguese Female', {rate:1.5});
 
 }
 
