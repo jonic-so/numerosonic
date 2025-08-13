@@ -47,7 +47,7 @@ textotela('p', 'escolha um número de 1 a 10');
          textotela('h1', 'errou');
       } else {
 
-   textotela('p', 'É menor que isso');
+   textotela('p', 'É maior que isso');
    textotela('h1', 'errou');
       }
 
@@ -94,4 +94,5 @@ function reiniciarjogo(){
    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
 mensagemcomeça();
+
 
