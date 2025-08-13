@@ -9,7 +9,7 @@ let titulo = document.querySelector('h1');
 titulo.innerHTML = 'jogo do sonic';
 
 let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'sonic de 1 a 10';
+paragrafo.innerHTML = 'Adivinhe um número de 1 a 10';
 
 
 function textotela(tag, texto){
@@ -22,33 +22,33 @@ function textotela(tag, texto){
 
 function mensagemcomeça(){
    textotela('h1', 'jogo do sonic');
-   textotela('p', 'escolha um sonic de 1 a 10');
+   textotela('p', 'escolha um número de 1 a 10');
 
 }
 
 textotela('h1', 'jogo do sonic');
-textotela('p', 'escolha um sonic de 1 a 10');
+textotela('p', 'escolha um número de 1 a 10');
 
 
  function verificarChute()  {
    let chute = document.querySelector('input').value;
  
    if (chute == numerosonic) {
-      textotela('h1', 'acertou caralho'); 
+      textotela('h1', 'acertou sabe muito'); 
       let palavratentativa = tentativas > 1? 'tentativas' : 'tentativa'; 
-      let mensagemtentativa = `conseguiu com ${tentativas} ${palavratentativa} seu bosta`;
+      let mensagemtentativa = `conseguiu com ${tentativas} ${palavratentativa} parece até vidente`;
       textotela('p', mensagemtentativa);
       document.getElementById('reiniciar').removeAttribute('disabled');
 
    } else {
       if (chute > numerosonic) {
 
-         textotela('p', 'eh menor q isso');
-         textotela('h1', 'errou trouxa');
+         textotela('p', 'É menor que isso');
+         textotela('h1', 'errou');
       } else {
 
-   textotela('p', 'eh maior q isso');
-   textotela('h1', 'errou trouxa');
+   textotela('p', 'É menor que isso');
+   textotela('h1', 'errou');
       }
 
       tentativas++;
@@ -94,3 +94,4 @@ function reiniciarjogo(){
    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
 mensagemcomeça();
+
